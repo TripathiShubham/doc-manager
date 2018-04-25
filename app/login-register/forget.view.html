@@ -1,0 +1,15 @@
+<div class="login-container">
+    <div class="container">
+        <form class="form-signin">
+            <h2 class="login-heading theme-color">Reset Password</h2>
+            <h5 class="login-heading theme-color">Enter your Email to reset password</h5>
+            <md-input-container class="md-block">
+                <input ng-model="user.email" type="email" placeholder="Email" ng-required="true">
+            </md-input-container>
+            <div layout="column">
+                <md-button class="md-raised md-primary"
+                    ui-sref="reset">Get OTP on Email</md-button>
+            </div>
+        </form>
+    </div>
+</div>

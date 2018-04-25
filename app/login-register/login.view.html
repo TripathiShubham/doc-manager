@@ -1,0 +1,28 @@
+<div class="login-container">
+    <div class="container">
+        <form class="form-signin">
+            <h2 class="login-heading theme-color">Sign In</h2>
+            <h5 class="login-heading theme-color">To manage all your documents</h5>
+            <md-input-container class="md-block">
+                <input ng-model="user.email" type="email" placeholder="Email" ng-required="true">
+            </md-input-container>
+            <md-input-container class="md-block">
+                <input ng-model="user.password" type="password" placeholder="Password" ng-required="true">
+            </md-input-container>
+            <div class="row">
+                <div class="col-md-6" layout="column">
+                    <md-button class="md-raised md-primary"
+                        ui-sref="dashboard.landing">Sign In</md-button>
+                </div>
+                <div class="col-md-6" layout="column">
+                    <md-button class="md-raised md-primary"
+                        ui-sref="register">Register</md-button>
+                </div>
+            </div>
+            <div class="container row col-md-6 theme-color padding-20 pointer"
+                ui-sref="forget">
+                <i class="material-icons">&#xE8FD;</i>&nbsp;Forget Password
+            </div>
+        </form>
+    </div>
+</div>

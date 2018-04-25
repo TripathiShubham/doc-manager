@@ -1,0 +1,26 @@
+<div class="login-container">
+        <div class="container">
+            <form class="form-signin">
+                <h2 class="login-heading theme-color">New to Doc Manager</h2>
+                <h5 class="login-heading theme-color">Register Here</h5>
+                <md-input-container class="md-block">
+                    <input ng-model="user.email" type="email" placeholder="Email" ng-required="true">
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <input ng-model="user.fname" type="text" placeholder="First Name" ng-required="true">
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <input ng-model="user.lname" type="text" placeholder="Last Name" ng-required="true">
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <input ng-model="user.company" type="test" placeholder="Company" ng-required="true">
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <input ng-model="user.password" type="password" placeholder="Password" ng-required="true">
+                </md-input-container>
+                <div layout="column">
+                    <md-button class="md-raised md-primary" ui-sref="register">Register</md-button>
+                </div>
+            </form>
+        </div>
+    </div>

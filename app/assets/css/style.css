@@ -1,0 +1,28 @@
+.full-page {
+  min-height: 600px;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 50%;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 8%; 
+  }
+
+  .login-heading {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .theme-color {
+    color: #6d598c;
+  }
+
+  .padding-20 {
+    padding: 20px;
+  }
+
+  .pointer {cursor: pointer;}
+
+  .margin-top {margin-top: 70px;}

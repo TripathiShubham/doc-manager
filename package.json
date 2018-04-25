@@ -1,0 +1,15 @@
+{
+  "name": "documnet-management",
+  "version": "1.0.0",
+  "description": "This is a tool to create, upload and manage documents bycreating library of documents",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SHP Group (Shubham Himanshu Prasanna)",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.8.4",
+    "express": "^4.16.3"
+  }
+}

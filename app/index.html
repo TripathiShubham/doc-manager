@@ -1,0 +1,61 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title ng-bind="$state.current.data.pageTitle"></title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+
+    <!-- build:css build/css/vendor.css-->
+    <link rel="stylesheet" href="/app/assets/lib/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="/app/assets/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/app/assets/css/style.css">
+    <!-- endbuild -->
+
+</head>
+
+<!-- apply our angular app to our site -->
+
+<body data-ng-app="DocApp" data-ng-controller="MainController as MainCtrl">
+
+    <!-- MAIN CONTENT -->
+    <div id="wrapper" class="clearfix">
+
+        <md-content class="md-no-momentum full-page">
+            <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+            <div ui-view></div>
+        </md-content>
+
+    </div>
+
+    <!-- build:js build/js/vendor.js-->
+    <script src="/app/assets/lib/angular/angular.min.js"></script>
+    <script src="/app/assets/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/app/assets/lib/angular-aria/angular-aria.js"></script>
+    <script src="/app/assets/lib/angular-animate/angular-animate.js"></script>
+    <script src="/app/assets/lib/angular-messages/angular-messages.js"></script>
+    <script src="/app/assets/lib/angular-material/angular-material.js"></script>
+    <script src="/app/assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js build/js/app.js-->
+    <script src="/app/app.module.js"></script>
+    <script src="/app/app.route.js"></script>
+
+    <script src="/app/mainCtrl/main.controller.js"></script>
+    <script src="/app/login-register/login.controller.js"></script>
+    <script src="/app/login-register/register.controller.js"></script>
+    <script src="/app/login-register/forget.controller.js"></script>
+    <script src="/app/login-register/reset.controller.js"></script>
+    <script src="/app/dashboard/dashboard.controller.js"></script>
+    <script src="/app/dashboard/landing/landing.controller.js"></script>
+    <!-- endbuild -->
+
+</body>
+
+</html>
